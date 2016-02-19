@@ -54,11 +54,11 @@
 		53D342C51C7778DD00459DEA /* CatAge */ = {
 			isa = PBXGroup;
 			children = (
-				53D342CD1C7778DD00459DEA /* Assets.xcassets */,
 				53D342D81C77799300459DEA /* Common */,
-				53D342D21C7778DD00459DEA /* Info.plist */,
 				53D342D91C77799700459DEA /* Storyboards */,
 				53D342DA1C77799F00459DEA /* ViewControllers */,
+				53D342CD1C7778DD00459DEA /* Assets.xcassets */,
+				53D342D21C7778DD00459DEA /* Info.plist */,
 			);
 			path = CatAge;
 			sourceTree = "<group>";
@@ -68,7 +68,7 @@
 			children = (
 				53D342C61C7778DD00459DEA /* AppDelegate.swift */,
 			);
-			name = Common;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		53D342D91C77799700459DEA /* Storyboards */ = {
@@ -77,7 +77,7 @@
 				53D342CF1C7778DD00459DEA /* LaunchScreen.storyboard */,
 				53D342CA1C7778DD00459DEA /* Main.storyboard */,
 			);
-			name = Storyboards;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		53D342DA1C77799F00459DEA /* ViewControllers */ = {
@@ -85,7 +85,7 @@
 			children = (
 				53D342C81C7778DD00459DEA /* HomeViewController.swift */,
 			);
-			name = ViewControllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +174,7 @@
 				53D342CB1C7778DD00459DEA /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		53D342CF1C7778DD00459DEA /* LaunchScreen.storyboard */ = {
@@ -182,6 +183,7 @@
 				53D342D01C7778DD00459DEA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -313,6 +315,7 @@
 				53D342D71C7778DD00459DEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
