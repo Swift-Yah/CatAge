@@ -16,12 +16,72 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat's Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrU-rj-6Bj">
+                                <rect key="frame" x="10" y="50" width="300" height="32.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.40784313729999999" green="0.70588235290000001" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How old your cat is?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtU-dX-EPj">
+                                <rect key="frame" x="10" y="102.5" width="300" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Its human age is: 0 years old" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csV-js-hQk">
+                                <rect key="frame" x="10" y="273" width="300" height="19.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="z4h-ll-c8s">
+                                <rect key="frame" x="110" y="133" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6Or-Dr-5ou"/>
+                                    <constraint firstAttribute="height" constant="30" id="Fu8-7J-lTE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Eh-qt-krp">
+                                <rect key="frame" x="10" y="193" width="300" height="30"/>
+                                <state key="normal" title="Calculate"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="PussPussInBoots" translatesAutoresizingMaskIntoConstraints="NO" id="fam-13-rmg">
+                                <rect key="frame" x="10" y="322.5" width="300" height="235.5"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0Eh-qt-krp" secondAttribute="trailing" constant="10" id="BFe-2b-5sS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fam-13-rmg" secondAttribute="bottom" constant="10" id="BT4-Up-qNd"/>
+                            <constraint firstItem="HrU-rj-6Bj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="BlI-qu-DvP"/>
+                            <constraint firstItem="z4h-ll-c8s" firstAttribute="top" secondItem="WtU-dX-EPj" secondAttribute="bottom" constant="10" id="Dd4-Tm-b0n"/>
+                            <constraint firstItem="csV-js-hQk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="EaU-oc-vLD"/>
+                            <constraint firstItem="fam-13-rmg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="KDv-Iv-3BV"/>
+                            <constraint firstAttribute="trailing" secondItem="fam-13-rmg" secondAttribute="trailing" constant="10" id="O9b-iK-nMF"/>
+                            <constraint firstAttribute="trailing" secondItem="WtU-dX-EPj" secondAttribute="trailing" constant="10" id="X0L-Ou-dQY"/>
+                            <constraint firstItem="0Eh-qt-krp" firstAttribute="top" secondItem="z4h-ll-c8s" secondAttribute="bottom" constant="30" id="XCs-Te-ko9"/>
+                            <constraint firstItem="z4h-ll-c8s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d8o-5m-eSO"/>
+                            <constraint firstAttribute="trailing" secondItem="csV-js-hQk" secondAttribute="trailing" constant="10" id="dwO-j7-bjX"/>
+                            <constraint firstItem="fam-13-rmg" firstAttribute="top" secondItem="csV-js-hQk" secondAttribute="bottom" constant="30" id="f0s-2v-UWU"/>
+                            <constraint firstItem="WtU-dX-EPj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="fl7-7e-U2t"/>
+                            <constraint firstAttribute="trailing" secondItem="HrU-rj-6Bj" secondAttribute="trailing" constant="10" id="n1P-WP-tss"/>
+                            <constraint firstItem="HrU-rj-6Bj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="qHI-wg-Ozq"/>
+                            <constraint firstItem="WtU-dX-EPj" firstAttribute="top" secondItem="HrU-rj-6Bj" secondAttribute="bottom" constant="20" id="wDz-g8-mxV"/>
+                            <constraint firstItem="csV-js-hQk" firstAttribute="top" secondItem="0Eh-qt-krp" secondAttribute="bottom" constant="50" id="wpZ-qb-5JJ"/>
+                            <constraint firstItem="0Eh-qt-krp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="yjz-2k-JPx"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="PussPussInBoots" width="1600" height="682"/>
+    </resources>
 </document>
