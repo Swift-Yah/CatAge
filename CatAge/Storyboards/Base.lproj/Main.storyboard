@@ -29,8 +29,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Its human age is: 0 years old" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csV-js-hQk">
-                                <rect key="frame" x="10" y="273" width="300" height="19.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For your cat its age is: 0 years old" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csV-js-hQk">
+                                <rect key="frame" x="10" y="273" width="300" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="8ZH-nx-3Wk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -47,9 +50,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Eh-qt-krp">
                                 <rect key="frame" x="10" y="193" width="300" height="30"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateCatAgeAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="zuj-a1-cym"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="PussPussInBoots" translatesAutoresizingMaskIntoConstraints="NO" id="fam-13-rmg">
-                                <rect key="frame" x="10" y="322.5" width="300" height="235.5"/>
+                                <rect key="frame" x="10" y="303" width="300" height="255"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -65,7 +71,7 @@
                             <constraint firstItem="0Eh-qt-krp" firstAttribute="top" secondItem="z4h-ll-c8s" secondAttribute="bottom" constant="30" id="XCs-Te-ko9"/>
                             <constraint firstItem="z4h-ll-c8s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d8o-5m-eSO"/>
                             <constraint firstAttribute="trailing" secondItem="csV-js-hQk" secondAttribute="trailing" constant="10" id="dwO-j7-bjX"/>
-                            <constraint firstItem="fam-13-rmg" firstAttribute="top" secondItem="csV-js-hQk" secondAttribute="bottom" constant="30" id="f0s-2v-UWU"/>
+                            <constraint firstItem="fam-13-rmg" firstAttribute="top" secondItem="csV-js-hQk" secondAttribute="bottom" constant="10" id="f0s-2v-UWU"/>
                             <constraint firstItem="WtU-dX-EPj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="fl7-7e-U2t"/>
                             <constraint firstAttribute="trailing" secondItem="HrU-rj-6Bj" secondAttribute="trailing" constant="10" id="n1P-WP-tss"/>
                             <constraint firstItem="HrU-rj-6Bj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="qHI-wg-Ozq"/>
@@ -75,6 +81,10 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="catAgeTextField" destination="z4h-ll-c8s" id="ccf-3Y-3bR"/>
+                        <outlet property="resultTextField" destination="csV-js-hQk" id="6nz-6a-RRO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
